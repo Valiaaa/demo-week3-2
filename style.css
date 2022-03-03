@@ -17,11 +17,12 @@ body{
   
 .left {
 	width: 40%;
+	position: fixed;
 }
   
 .right {
 	width: 55%;
-	margin-left: 20%;
+	margin-left: 45%;
 }
 
 .row:after {
@@ -31,18 +32,38 @@ body{
 }
 
 @media screen and (max-width: 600px) {
+	.left {
+		position: relative;
+		width: 99%;
+	}
+	.right {
+		margin-left: 0%;
+	}
 	.column {
-	  width: 100%;
+	  margin-left: 2.5%;
+	  width: 99%;
+	}
+	.box {
+		width: 99% !important;
+		}
+	.textt {
+		margin-left: 2.5% !important;
+		width: 99% !important;
 	}
 }
 
 .box {
 	border: none;
 	padding: 5px;
-	width: 40%;
+	width: 45%;
 	height: 650px;
 	overflow: scroll;
 	}
+
+.textt {
+		width: 55%;
+		margin-left: 44.5%;
+		}
 
 	::-webkit-scrollbar {
 		width: 12px;
